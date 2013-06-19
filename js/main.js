@@ -76,7 +76,7 @@ function getCueData(videoId){
   		if (numTracks === MINTRACKS) {
   			isReady = true;
   			var div = document.querySelector('div#queryExplanation');
-  			div.style.color = '#ccc';
+  			div.style.color = '#666';
   			div.innerText =
   				'Enter text to search transcripts, then click on a result to view video.';
   			var input = document.querySelector('input#query');
@@ -112,6 +112,9 @@ function getYouTubeData(videoId){
 }
 
 
+function scrollToTop(){
+	$('html,body').animate({scrollTop:0},0);
+}
 
 // http://storage.googleapis.com/io2012/headshots/mkwst.jpg
 
@@ -128,7 +131,10 @@ function addClickHandler(cueDiv, cue) {
 				"?start=" + cue.startTime +
 				"&autoplay=1&enablejsapi=1"
 		}
+
+		scrollToTop();
 	});
+
 }
 
 function displayResults(results) { // results is an array of cues
