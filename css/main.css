@@ -1,12 +1,3 @@
-a {
-color: #77aaff;
-text-decoration: none;
-}
-
-a:hover {
-color: #88bbff;
-text-decoration: underline;
-}
 
 a#viewSource {
 display: block;
@@ -16,26 +7,13 @@ border-top: 1px solid #999;
 padding: 20px 0 0 0;
 }
 
+
+
 div#links a {
 display: block;
 line-height: 2em;
 }
 
-body {
-background: #666;
-font-family: Arial, sans-serif;
-overflow-y: scroll;
-padding: 20px;
-}
-
-button {
-margin: 0 10px 0 0;
-/*
-padding: 5px;
-min-width: 70px;
-font-size: 1.2em;
- */
-}
 
 button[disabled] {
 color: white;
@@ -46,7 +24,6 @@ margin: 0 0 0.3em 0;
 }
 
 div#container {
-background: #000;
 margin: 0 auto 0 auto;
 padding: 15px 30px 20px 30px;
 width: 640px;
@@ -108,10 +85,9 @@ padding: 0 0 0.6em 0;
 }
 
 div.video div.speakers {
-color: #999;
-font-size: 11pt;
+color: rgb(117, 117, 117);
+font-size: 20px;
 margin: 0 0 -0.1em 0;
-padding: 0 0 0 16px;
 }
 
 div.video div.videoSummary {
@@ -133,28 +109,12 @@ font-style: normal;
 background: rgba(224, 79, 23, 0.49);
 }
 
-h1 {
-border-bottom: 1px solid #aaa;
-color: white;
-font-family: Arial, sans-serif;
-margin: 0 0 30px 0;
-padding: 0 0 10px 0;
-}
-
-h2 {
-color: #ccc;
-font-family: Arial, sans-serif;
-margin: 30px 0 0 0;
-}
 
 iframe {
 background-color: #222;
 margin: 0 0 20px 0;
 }
 
-img {
-border: none;
-}
 
 img.videoThumbnail {
 float: left;
@@ -171,11 +131,7 @@ width: 627px;
 margin:  0 0 10px 0;
 }
 
-p {
-color: #eee;
-font-size: 14px;
-line-height: 1.4em;
-}
+
 
 p#data {
 font-family: monospace;
@@ -200,11 +156,11 @@ color: #aaa;
 }
 
 span.cueText {
-color: #ccc;
+color: #000;
 }
 
 span.cueText:hover {
-color: white;
+color: #666;
 }
 
 span.inputLabel {
@@ -216,7 +172,7 @@ line-height: 1em;
 }
 
 summary{
-color: white;
+color: black;
 cursor: pointer;
 font-weight: bold;
 outline: none;
