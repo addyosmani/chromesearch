@@ -43,7 +43,7 @@
         "id": "L3ugr9BJqIs"
     },
 
-        "E8qvkGTwiV0": {
+    "E8qvkGTwiV0": {
         "speakers": [
             "Addy Osmani",
             "Paul Irish"
@@ -97,4 +97,4 @@
         "title": "The Breakpoint Ep 3: The Sourcemap Spectacular with Paul Irish and Addy Osmani",
         "id": "HijZNR6kc9A"
     }
-};
+}

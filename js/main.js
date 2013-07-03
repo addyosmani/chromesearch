@@ -1,5 +1,5 @@
 var isReady;
-var MINTRACKS = 250; // !!!hack to determine if getting/parsing data is complete
+var MINTRACKS = 7; // !!!hack to determine if getting/parsing data is complete
 var numTracks = 0;
 var trackPath = "tracks/";
 var trackSuffix = ".srt";
@@ -74,6 +74,7 @@ function getCueData(videoId){
 	  	}
 	  	numTracks += 1;
   		if (numTracks === MINTRACKS) {
+  			console.log('is ready');
   			isReady = true;
   			var div = document.querySelector('div#queryExplanation');
   			div.style.color = '#666';
@@ -85,6 +86,7 @@ function getCueData(videoId){
   		}
 
   	} // xhr.readyState === 4 && xhr.status === 200
+
   } // xhr.onreadystatechange
 	xhr.send();
 }
@@ -132,10 +134,14 @@ function addClickHandler(cueDiv, cue) {
 				"&autoplay=1&enablejsapi=1"
 		}
 
+		youTubePlayer.style.display = 'block';
 		scrollToTop();
 	});
 
 }
+
+
+
 
 function displayResults(results) { // results is an array of cues
 	document.querySelector("*").style.cursor = "";
@@ -268,3 +274,14 @@ function toHoursMinutesSeconds(decimalSeconds){
 	return hours + ":" + mins + ":" + secs;
 }
 
+$('.video-list li img').on('click', function(){
+	var mid = $(this).data('episode');
+
+	youTubePlayer.src =
+				"http://www.youtube.com/embed/" + mid +
+				"?start=" + 0 +
+				"&autoplay=1&enablejsapi=1";
+	youTubePlayer.style.display = 'block';
+	scrollToTop();
+
+});

@@ -189,3 +189,33 @@ line-height: 1.2em;
 video {
 background: #222;
 }
+
+
+
+  .video-list{
+    list-style-type:none;
+    font-size:1em;
+    margin-left:-30px; /*hack*/
+  }
+  .video-list li{
+    padding: 5px;
+    width: 47%;
+    float: left;
+  }
+
+.video-list li:nth-child(odd) {
+  clear: both;
+}
+
+  .video-list iframe{
+    width:85%;
+  }
+
+  .video-list img{
+    width:85%;
+    cursor:pointer;
+  }
+
+  #youTubePlayer{
+    display:none;
+  }

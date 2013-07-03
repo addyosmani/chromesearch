@@ -99,22 +99,22 @@
 
 <div id="container">
 
-<h1>The Breakpoint: Episode Transcript Search</h1>
+<h1>The Breakpoint</h1>
 
-<p><a href="http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw">The Breakpoint</a> is a developer tools and productivity show hosted by Paul Irish, Addy Osmani, John McCutchen and Paul Lewis.</p>
+<h2>Episode Transcript Search</h2>
 
-<p class="note">Click 'Playlist' below to select an episode or use the transcript search lower down to look for specific keywords that were covered in past shows.</p>
+<p><a href="http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw">The Breakpoint</a> is a developer tools and productivity show hosted by Paul Irish, Addy Osmani, John McCutchan and Paul Lewis.</p>
 
-<!--
-<iframe id="youTubePlayer" class="youtube-player" type="text/html" width="640" height="385" frameborder="0" src="http://www.youtube.com/embed/videoseries?list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw"></iframe>
--->
+<p class="note"><strong>Note:</strong> Use the transcript search to look for specific keywords that were covered in past shows or pick an episode to watch it in full.</p>
 
-<iframe id="youTubePlayer" class="youtube-player" type="text/html" width="853" height="480" frameborder="0" src="http://www.youtube.com/embed/videoseries?list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw"></iframe>
+<iframe id="youTubePlayer" class="youtube-player" type="text/html" width="853" height="480" frameborder="0" src=""></iframe>
 
 <div id="info">
+    <div id="queryExplanation">Loading data: first time may take up to 20 seconds...</div>
+
   <input id="query" type="text" disabled autofocus placeholder="e.g timeline" />
-  <div id="queryExplanation">Loading data: first time may take up to 30 seconds...</div>
 </div> <!-- info -->
+
 
 <div id="numResults"></div>
 
@@ -122,25 +122,79 @@
 <div id="results"></div>
 <!-- end results container, content generated dynamically -->
 
-<details>
-  <summary>How does this work?</summary>
-  <p>Enter text to search the manual transcripts of Breakpoint videos.</p>
-  <p style="border-bottom: 1px solid #444; padding: 0 0 1em 0;">Click on a result to view video.</p>
-</details>
+
+<h2>Past Episodes</h2>
+
+
+<ul class="video-list">
+<li>  
+<h3>The Breakpoint Ep. 1: Chrome DevTools with Addy Osmani and Paul Lewis</h3>
+<p>In this first episode of the The Breakpoint—a show dedicated to developer tools and time-saving techniques—Addy Osmani and Paul Lewis (sitting in for Paul Irish who was out sick) talk about</p>
+<img src="http://img.youtube.com/vi/ktwJ-EDiZoU/0.jpg" alt="" data-episode="ktwJ-EDiZoU">
+</li>
+
+<li>
+<h3>The Breakpoint Ep. 2: Chrome DevTools with Paul Irish and Addy Osmani</h3>
+<p>Addy Osmani and the (real) Paul Irish return for the second live episode of the Breakpoint - a new show focusing on developer tooling and workflow. This week they'll be showing us brand new SASS, feature inspection and console features in the Chrome Developer Tools. If you want your to stay on the bleeding edge of tooling, you won't want to miss it.</p>
+
+<img src="http://img.youtube.com/vi/PPXeWjWp-8Y/0.jpg" alt="" data-episode="PPXeWjWp-8Y">
+</li>
+
+<li>
+<h3>The Breakpoint Ep 3: The Sourcemap Spectacular with Paul Irish and Addy Osmani</h3>
+<p>Take Coffeescript to Javascript to Minified and all the way back with source maps. In addition to a new Coffeescript sourcemap workflow, we'll cover the latest sourcemap updates so you can understand how to dramatically improve your debugging experience. Finally, Paul and Addy will be joined by special guest—Yeoman core contributor Sindre Sorhus—to discuss what big new changes are coming to the project.</p>
+
+<img src="http://img.youtube.com/vi/HijZNR6kc9A/0.jpg" alt="" data-episode="HijZNR6kc9A">
+</li>
+
+
+<li>
+<h3>The Breakpoint Ep. 4 — The Tour De Timeline</h3>
+<p>The DevTools' Timeline shows the heartbeat and health of your application's performance. In this episode we'll do a deep deep dive into how to uncover the cost of internal browser operations like parsing HTML, decoding images, invalidating layout geometry and painting to screen. Paul and Addy will show you how best to approach improving the performance of your CSS and JS.</p>
+<img src="http://img.youtube.com/vi/WpqZ0LjNU5A/0.jpg" alt="" data-episode="WpqZ0LjNU5A">
+</li>
+
+<li>
+<h3>Breakpoint Episode 5: DevTools Grab bag</h3>
+<p>It's a brand new year and Paul Irish and Addy Osmani are back with a grab bag of DevTools tips and tricks. Learn how the DevTools overrides can help you debug your mobile apps, see the experimental support for CSS Regions, identify what initiated all your network requests, and inspect your websocket data. We'll also cover the native memory instrumentation and use the debugger to inspect internal properties of bound JavaScript functions.</p>
+<img src="http://img.youtube.com/vi/FdsummsTeLo/0.jpg" alt="" data-episode="FdsummsTeLo">
+</li>
+
+<li>
+<h3>The Breakpoint Ep. 6: Accelerating Load Time, Run Time, and JS tooling</h3>
+<p>In this episode, Addy and Paul look at improving the speed of authoring, the load performance and runtime performance of JavaScript apps. First up, a case study of reducing Wikipedia's load time by 15 seconds (!) with the Chrome DevTools' Timeline. Next, The trials and tribulations of the null transforms (aka <code>translateZ(0)</code>). After, understanding the available JavaScript language tooling landscape. What tools can keep you from making poor mistakes and improve your code's maintainability. Lastly, a preview of the soon-available Snippets feature in DevTools</p>
+<img src="http://img.youtube.com/vi/E8qvkGTwiV0/0.jpg" alt="" data-episode="E8qvkGTwiV0">
+</li>
+
+<li>
+<h3>The Breakpoint Ep. 7: Profiling a mobile site with Chrome DevTools and Android</h3>
+<p>Learn how you can use Chrome DevTools against a page running on your Android device. Chrome DevTools is just as powerful for the mobile web as it is for the desktop web. Notable sections include Using Timeline, Show Paint Rectangles and Composited Layer Borders, Cause of Forced Layout, about:tracing, continuous page repainting mode, Enabling remote debugging with Chrome DevTools</p>
+<img src="http://img.youtube.com/vi/dRwzmoDZtZM/0.jpg" alt="" data-episode="dRwzmoDZtZM">
+</li>
+
+
+<li>
+<h3>The Breakpoint Ep. 8: Memory Profiling with Chrome DevTools</h3>
+<p>Introduction to JavaScript memory management basics and a deeper dive into the Heap Profiler in Chrome DevTools with John McCutchan and Loreena Lee. This episode covers JavaScript Memory Management Basics, Profiling with Chrome DevTools, The Three Snapshot technique and the Tale of the missing object key.</p>
+<img src="http://img.youtube.com/vi/L3ugr9BJqIs/0.jpg" alt="" data-episode="L3ugr9BJqIs">
+</li>
+</ul>
+
+
+
+
 
 </div>
 
 
 <script src="js/lib/jquery-2.0.0.min.js"></script>
 <script src="js/lib/callPlayer.js"></script>
-<script src="js/videos_full.js"></script>
+<script src="js/videos.js"></script>
 <script src="js/main.js"></script>
 <script src="js/lib/ga.js"></script>
 
 
     <!--// END MAIN PAGE CONTENT -->
-
-
 
       <div id="gc-content-footer">
           <div id="gc-content-license">
